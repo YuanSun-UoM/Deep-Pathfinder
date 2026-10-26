@@ -30,7 +30,10 @@ To apply the Deep-Pathfinder algorithm using the last 45 minutes of ceilometer d
 ```
 python Deep-Pathfinder_inference.py
 ```
-
+or
+```
+python -u Deep-Pathfinder_inference.py 2>&1 | tee inference.log
+```
 The following results will be written to the `data` folder:
 * The latest model input to check what information has been used for model inference
 * A plot to visualise results, with the black line representing Deep-Pathfinder estimates
